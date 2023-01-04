@@ -1,0 +1,260 @@
+
+header {
+    text-align: center;
+
+    width: 650px;
+    margin: auto;
+
+    background-color: #018281;
+
+    border-top: inset 5px black;
+    border-left: inset 5px black;
+    border-bottom: inset 5px gray;
+    border-right: inset 5px gray;
+}
+
+body {
+    background-color:#252525;
+    /* background-image: url("img_all/cybercity_2.png");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 100%; */
+}
+
+#wrapper {
+    width: 1000px;
+    
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    margin: auto;
+}
+
+nav {
+    margin: 5px 0px 5px 0px;
+
+    /* box-shadow: 0px -5px #000000, 5px 0px #505050, 0px 5px #bebebe, -5px 0px #505050; */
+    /* border-top: inset 5px black;
+    border-left: inset 5px black;
+    border-bottom: inset 5px gray;
+    border-right: inset 5px gray; */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+
+    margin: 0;
+    padding: 5px;
+
+    background-color: #252525;
+}
+
+nav li {
+    display: inline-block;
+
+    border-top: inset 5px lightgray;
+    border-left: inset 5px lightgray;
+    border-bottom: inset 5px black;
+    border-right: inset 5px black;
+}
+
+nav li:hover {
+    background-color: lightgray;
+
+    border-top: inset 5px black;
+    border-left: inset 5px black;
+    border-bottom: inset 5px gray;
+    border-right: inset 5px gray;
+}
+
+nav li:hover a {
+    color: black;
+}
+
+nav li a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    /* margin: 5px; */
+    text-decoration: none;
+}
+
+main {
+    min-height: 500px;
+
+    background-color: #018281;
+
+    border-top: inset 5px black;
+    border-left: inset 5px black;
+    border-bottom: inset 5px gray;
+    border-right: inset 5px gray;
+}
+
+.twoCol {
+    display: flex;
+}
+
+.twoCol_left {
+    flex: 10%;
+    
+    padding: 125px 10px 10px 10px;
+
+    /* background-color: #1c5555; */
+}
+
+.twoCol_right {
+    flex: 90%;
+
+    padding: 0px 20px 10px 20px;
+
+    background-color: #1c5555;
+}
+
+.twoCol_left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #018281;
+    text-align: center;
+}
+
+.twoCol_left li {
+    display: inline-block;
+}
+
+.twoCol_left li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.twoCol_left li a:hover {
+    background-color: #3ea0a0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.sectionTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+
+    width: 80%;
+
+    margin-top: 20px;
+    /* padding: 0px 10px 0px 10px; */
+
+    border-top: solid 5px gray;
+    border-right: ridge 10px gray;
+    border-bottom: ridge 10px gray;
+    border-left: solid 5px gray;
+
+    background-color: lightgray;
+}
+
+.sectionTitle_nav {
+    /* height: 15px; */
+
+    border-bottom: solid 5px gray;
+
+    background-color: navy;
+    /* background-image: linear-gradient(to right, navy , gray); */
+}
+
+.sectionTitle_nav ul {
+    font-size: 0.6em;
+
+    padding: 3px;
+    margin: 0px;
+
+    list-style-type: none;
+    text-align: right;
+}
+
+.sectionTitle_nav li {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0px 4px 0px 4px;
+    margin-left: -5px;
+
+    background-color: gray;
+}
+
+.sectionTitle_nav li:last-of-type {
+    font-size: 0.84em;
+}
+
+.sectionTitle h2 {
+    padding: 5px;
+    margin: 0px;
+
+    border-top: inset 5px gray;
+    border-right: inset 5px gray;
+    border-bottom: inset 5px gray;
+    border-left: inset 5px gray;
+}
+
+.sectionBody {
+    margin-top: 20px;
+
+    border-top: solid 5px gray;
+    border-right: ridge 10px gray;
+    border-bottom: ridge 10px gray;
+    border-left: solid 5px gray;
+
+    background-color: lightgray;
+}
+
+.sectionBody_nav {
+    /* height: 15px; */
+
+    border-bottom: solid 5px gray;
+
+    background-color: navy;
+    /* background-image: linear-gradient(to right, navy , gray); */
+}
+
+.sectionBody_nav ul {
+    font-size: 0.9em;
+
+    padding: 3px;
+    margin: 0px;
+
+    list-style-type: none;
+    text-align: right;
+}
+
+.sectionBody_nav li {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0px 4px 0px 4px;
+    margin-left: -5px;
+
+    background-color: gray;
+}
+
+.sectionBody_nav li:last-of-type {
+    font-size: 0.83em;
+}
+
+.sectionBody_content {
+    border-top: inset 5px gray;
+    border-right: inset 5px gray;
+    border-bottom: inset 5px gray;
+    border-left: inset 5px gray;
+}
+
+.sectionBody p {
+    margin: 20px 15px 20px 15px;
+}
