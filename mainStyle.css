@@ -7,10 +7,10 @@ header {
 
     background-color: #018281;
 
-    border-top: inset 5px black;
-    border-left: inset 5px black;
-    border-bottom: inset 5px gray;
-    border-right: inset 5px gray;
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-bottom: solid 5px gray;
+    border-right: solid 5px gray;
 }
 
 body {
@@ -52,19 +52,19 @@ nav ul {
 nav li {
     display: inline-block;
 
-    border-top: inset 5px lightgray;
-    border-left: inset 5px lightgray;
-    border-bottom: inset 5px black;
-    border-right: inset 5px black;
+    border-top: solid 5px gray;
+    border-left: solid 5px gray;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
 }
 
 nav li:hover {
     background-color: lightgray;
 
-    border-top: inset 5px black;
-    border-left: inset 5px black;
-    border-bottom: inset 5px gray;
-    border-right: inset 5px gray;
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-bottom: solid 5px gray;
+    border-right: solid 5px gray;
 }
 
 nav li:hover a {
@@ -86,10 +86,10 @@ main {
 
     background-color: #018281;
 
-    border-top: inset 5px black;
-    border-left: inset 5px black;
-    border-bottom: inset 5px gray;
-    border-right: inset 5px gray;
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-bottom: solid 5px gray;
+    border-right: solid 5px gray;
 }
 
 .twoCol {
@@ -291,7 +291,7 @@ h1 {
 
 .sectionBody_content img {
     display: block;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
 }
 
