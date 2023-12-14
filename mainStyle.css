@@ -305,3 +305,18 @@ h1 {
     border-bottom: inset 5px gray;
     border-left: inset 5px gray; */
 }
+
+
+#scale_climb {
+    -moz-transform: scale(0.6, 0.6); 
+    -webkit-transform: scale(0.6, 0.6); 
+    -o-transform: scale(0.6, 0.6);
+    -ms-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6); 
+
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
