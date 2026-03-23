@@ -7,92 +7,140 @@
 
     <meta name="description" content="WIP | Personal Site">
 
-    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="css/reworkedMainstyle.css">
     <!-- <link rel="icon" href=""> -->
+
+    <script src="js/init.js"></script>
+    <script src="js/theme_switcher.js"></script>
+    <script type="text/javascript">
+        window.onload=window.onpageshow= function() { changeTheme(3); };
+    </script>
+    <script src="js/re_headnav.js"></script>
 
     <title>gamedev | sheepydwagon</title>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <!-- <img src="" alt="" width="100%"> -->
-            <h1><a href="index.html">sheepydwagon</a></h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="art.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Art</a></li>
-                <li><a href="gamedev.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Gamedev</a></li>
-                <li><a href="webdev.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Webdev</a></li>
-                <li><a href="archival.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Archival</a></li>
-                <li><a href="writing.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Writing</a></li>
-            </ul>
-        </nav>
+        <header-component></header-component>
 
         <main>
-            <div class="twoCol">
-                <div class="twoCol_left">
-                    <ul>
-                        <li>
-                            <a href="gamedev/dilf_dating.html"><img src="icons/folder_closed_64.png" width="48px"><br>
-                                Dilf Dating Sim [WIP]</a>
-                        </li>
-                        <li>
-                            <a href="gamedev/spamton_swatter.html"><img src="icons/spamton_swatter_64.png" width="48px"><br>
-                                Spamton Swatter</a>
-                        </li>
-                        <li>
-                            <a href="gamedev/fit.html"><img src="icons/folder_closed_64.png" width="48px"><br>
-                                FIT [CANCELLED]</a>
-                        </li>
-                        <li>
-                            <a href="gamedev/beatplayer.html"><img src="icons/beatplayer_64.png" width="48px"><br>
-                                BeatPlayer</a>
-                        </li>
-                        <li>
-                            <a href="gamedev/a_short_climb.html"><img src="icons/ashortclimb_64.png" width="48px"><br>
-                                A Short Climb</a>
-                        </li>
-                        <li>
-                            <a href="gamedev/hetaoni_remastered.html"><img src="icons/folder_closed_64.png" width="48px"><br>
-                                HetaOni Remastered [CANCELLED]</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="twoCol_right">
-                    <div class="sectionTitle">
-                        <div class="sectionTitle_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionTitle_title">
-                            <!-- <img src="wip/test_title.png"> -->
-                            <h2>Gamedev</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="sectionBody">
-                        <div class="sectionBody_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionBody_content">
-                            <p>
-                                Hobbyist game development archive
-                            </p>
-                            <p>
-                                ← Click one of the icons to explore
-                            </p>
-                        </div>
-                    </div>
+            <div id="layout_home">
 
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <h2 class="h2_rounded_section">My Games</h2>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <h2>My Different OC Worlds</h2>
+                            <div class="div_rounded">
+                                <p>
+                                    My original character (OC) worlds and stuff
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;"></td>
+                    </tr> -->
+                </table>
+
+                <table style="width: 455px; margin: auto;">
+                    <tr>
+                        <td>
+                            <a class="character_profile_link" href="#">
+                                <div class="character_profile">
+                                    <h2>2023</h2>
+                                    <div class="div_rounded" style="justify-content: center;">
+                                        <img src="img/logos/spamtonswatter_logo_1.png" height="120px">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;"></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td style="width: 455px;">
+                            <a class="character_profile_link" href="#">
+                                <div class="character_profile">
+                                    <h2>2022</h2>
+                                    <div class="div_rounded" style="justify-content: center;">
+                                        <img src="img/logos/beatplayer_logo_1.png" height="120px">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                        <td style="width: 14px;"></td>
+                        <td>
+                            <a class="character_profile_link" href="#">
+                                <div class="character_profile">
+                                    <h2>2021</h2>
+                                    <div class="div_rounded" style="justify-content: center;">
+                                        <img src="img/logos/ashortclimb_logo_1.png" height="120px">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;" colspan="2"></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <h2 class="h2_rounded_section">Unfinished Projects</h2>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <h2>Description</h2>
+                            <div class="div_rounded">
+                                <p>
+                                    Probably never going back to these, but they were significant enough to be personally that I'd like to archive what I did
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;"></td>
+                    </tr> -->
+                </table>
+
+                <table>
+                    <tr>
+                        <td style="width: 455px;">
+                            <a class="character_profile_link" href="#">
+                                <div class="character_profile">
+                                    <h2>2021-2022</h2>
+                                    <div class="div_rounded" style="justify-content: center;">
+                                        <img src="img/logos/fit_logo_v1.png" height="120px">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                        <td style="width: 14px;"></td>
+                        <td>
+                            <a class="character_profile_link" href="#">
+                                <div class="character_profile">
+                                    <h2>2018-2019</h2>
+                                    <div class="div_rounded" style="justify-content: center;">
+                                        <img src="img/logos/hetaoniremastered_logo_1.png" height="120px">
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                
             </div>
         </main>
 

@@ -7,99 +7,136 @@
 
     <meta name="description" content="WIP | Personal Site">
 
-    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="css/reworkedMainstyle.css">
     <!-- <link rel="icon" href=""> -->
+
+    <script src="js/init.js"></script>
+    <script src="js/theme_switcher.js"></script>
+    <script type="text/javascript">
+        window.onload=window.onpageshow= function() {changeTheme(0); };
+    </script>
+    <script src="js/re_headnav.js"></script>
 
     <title>sheepydwagon</title>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <!-- <img src="" alt="" width="100%"> -->
-            <h1><a href="index.html">sheepydwagon</a></h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="art.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Art</a></li>
-                <li><a href="gamedev.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Gamedev</a></li>
-                <li><a href="webdev.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Webdev</a></li>
-                <li><a href="archival.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Archival</a></li>
-                <li><a href="writing.html"><img src="icons/folder_closed.png" alt="" width="16px">&nbsp;Writing</a></li>
-            </ul>
-        </nav>
+        <header-component></header-component>
 
         <main>
-            <div class="twoCol">
-                <!-- <div class="twoCol_left">
-                    <ul>
-                        <li><a href="index.html"><img src="icons/folder_closed.png" alt=""><br>Home</a></li>
-                        <li><a href="#"><img src="icons/folder_closed.png" alt=""><br>About</a></li>
-                    </ul>
-                </div> -->
+            <div id="layout_home">
 
-                <div class="twoCol_right">
-                    <div class="sectionTitle">
-                        <div class="sectionTitle_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionTitle_title">
-                            <h2>Welcome!</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="sectionBody">
-                        <div class="sectionBody_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionBody_content">
-                            <p>
-                                Hi welcome to my portfolio site :D
-                            </p>
-                            <p>
-                                It is currently undergoing construction so please ignore some of the jank, thx
-                            </p>
-                        </div>
-                    </div>
+                <table>
+                    <tr>
+                        <td style="width: 380px;">
+                            <img src="img/fursona/sheepy_redesign_3_THUMB2.png" width="380px" height="366px" 
+                            style="margin-bottom: 20px; border-radius: 12px; border: 4px solid var(--theme-dark);">
+                            
+                            <h2 class="h2_rounded">Socials</h2>
+                            <!-- <p>
+                               <a href="https://stringsattached.neocities.org/">Strings Attached</a> is a Deltarune fansite that archives everything Spamton related, with the hopes of eventually 
+                            </p> -->
+                            <div id="content_home_socials">
+                                <a href="https://sheepydwagondraws.tumblr.com/" target="_blank"><img src="img/icons/tumblr.png" title="tumblr"></a>
+                                <a href="https://artfight.net/~sheepydwagon" target="_blank"><img src="img/icons/artfight_2.png" title="ArtFight"></a> 
+                                <a href="https://deltaruneboards.net/index.php?showuser=469" target="_blank"><img src="img/icons/dumb_2.png" title="DUMB"></a>
+                                <a href="https://www.instagram.com/sheepydwagon" target="_blank"><img src="img/icons/instagram_3.png" title="Instagram (inactive)"></a>
+                                <a href="https://www.youtube.com/@SheepyDwagon" target="_blank"><img src="img/icons/youtube.png" title="YouTube (inactive)"></a>
+                            </div>
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <h2>Welcome 2 My Personal Website :D</h2>
+                            <div class="div_rounded">
+                                <p>
+                                    This is my own little space where I archive my artwork, creative projects, thoughts on media, and whatever else I feel like adding
+                                    <br><br>
+                                    Make your own personal website, be messy, be yourself, and have fun
+                                </p>
+                            </div>
 
-                    <div class="sectionBody">
-                        <div class="sectionBody_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionBody_content">
-                            <p>
-                                About & Socials
-                            </p>
-                        </div>
-                    </div>
+                            <h2>About Me</h2>
+                            <div class="div_rounded" style="flex-direction:column;">
+                                <table>
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <h3> Alex ✦ he/they ✦ 26 </h3>
+                                            <p>
+                                                transmasc non-binary <br>
+                                                aspec bi queer
+                                            </p>
+                                        </td>
+                                        <td style="width: 50%;">
+                                            <div>
+                                                <h3>Fav Animals:</h3>
+                                                <p>
+                                                    sheep, crabs, snails, slugs, seals, cats, tigers, foxes, werewolves
+                                                </p>
+                                                <!-- <img src="img/emoji/ram_SMALL.png">
+                                                <img src="img/emoji/crab_SMALL.png">
+                                                <img src="img/emoji/snail_SMALL.png">
+                                                <img src="img/emoji/seal_SMALL.png">
+                                                <img src="img/emoji/cat-face_SMALL.png">
+                                                <img src="img/emoji/tiger-face_SMALL.png">
+                                                <img src="img/emoji/fox-face_SMALL.png"> -->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="height: 25px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Hobbies:</h3>
+                                            <p>
+                                                digital art, collage, physical crafts, sewing, webdev, archival, gamedev
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <h3>Interests:</h3>
+                                            <p>
+                                                Deltarune (Spamtologist), <br>
+                                                middle aged men (babygirls)  
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- <p>
+                                    Alex ✦ he/they ✦ 26 
+                                    <br><br>
+                                    Hobbies: <br>
+                                    Digital art, collage, physical crafts, sewing, webdev, archival, gamedev
+                                    <br><br>
+                                    Interests: <br>
+                                    Deltarune (Spamtologist), Middle aged men (babygirl enjoyer) 
+                                    <br><br>
+                                </p> -->
+                                <!-- <div>
+                                    <img src="img/emoji/ram_SMALL.png">
+                                    <img src="img/emoji/crab_SMALL.png">
+                                    <img src="img/emoji/snail_SMALL.png">
+                                    <img src="img/emoji/seal_SMALL.png">
+                                    <img src="img/emoji/cat-face_SMALL.png">
+                                    <img src="img/emoji/fox-face_SMALL.png">
+                                    <img src="img/emoji/tiger-face_SMALL.png">
+                                    <img src="img/emoji/wolf-face_SMALL.png">
+                                </div> -->
+                            </div>
 
-                    <!-- <div class="sectionTitle">
-                        <div class="sectionTitle_nav">
-                            <ul>
-                                <li>—</li>
-                                <li>□</li>
-                                <li>✕</li>
-                            </ul>
-                        </div>
-                        <div class="sectionTitle_title">
-                            <img src="wip/test_photo.png">
-                            <h2>Section Title</h2>
-                        </div>
-                    </div> -->
-
-                </div>
+                            <h2>My Other Websites</h2>
+                            <div class="div_rounded">
+                                <a href="https://stringsattached.neocities.org/" target="_blank">
+                                    <img src="img/icons/stringsattached_round.png" title="Strings Attached"
+                                        style="margin-right: 15px;">
+                                </a>
+                                <p style="padding-top: 6px;">
+                                    <a href="https://stringsattached.neocities.org/" target="_blank">Strings Attached</a> is a Deltarune fansite that archives everything Spamton related, with the hopes of eventually becoming a one-stop-shop for all things Deltarune
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
             </div>
         </main>
 
