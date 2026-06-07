@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <meta name="description" content="WIP | Personal Site">
+
+    <link rel="stylesheet" href="../css/reworkedMainstyle.css">
+    <!-- <link rel="icon" href=""> -->
+
+    <script src="../js/init.js"></script>
+    <script src="../js/theme_switcher.js"></script>
+    <script type="text/javascript">
+        window.onload=window.onpageshow= function() { changeTheme(1); };
+    </script>
+    <script src="../js/re_headnav.js"></script>
+
+    <!-- 
+    LIGHTBOX3 -------------------------------------------------------
+    plugin website: https://lokeshdhakar.com/projects/lightbox3/
+    plugin source: https://cdn.jsdelivr.net/npm/lightbox3@1.1.0/dist/ 
+    -->
+    <link rel="stylesheet" href="../css/lightbox3.css">
+    <script src="../js/lightbox3.min.js" defer></script>
+    <script src="../js/gallery_filter.js" defer></script>
+
+    <title>digital art | sheepydwagon</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header-component></header-component>
+
+        <main>
+            <div id="layout_home">
+
+                <table>
+                    <tr>
+                        <td>
+                            <h2 class="h2_rounded_section"><a href="../art.html">🢀 Back - Art Gallery</a></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Digital Art</h2>
+                            <div class="div_rounded">
+                                <p>
+                                    Various digital art pieces I've done
+                                    <br><br>
+                                    I can't get the filtering to apply to the fullscreen gallery at the moment, sorry about that :/
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;"></td>
+                    </tr>
+                </table>
+
+                <table style="margin-left: auto; margin-right: auto;">
+                    <tr>
+                        <td>
+                            <div id="galleryButtons">
+                                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                                <button class="btn" onclick="filterSelection('deltarune')"> Deltarune</button>
+                                <button class="btn" onclick="filterSelection('oc')"> OCs</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="character_profile_full">
+                                <h2>2026</h2>
+                                <div class="div_rounded" style="flex-wrap: wrap; justify-content: left;">
+                                    <div class="gallery ocs">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="200px" height="300px">
+                                        </a>
+                                    </div>
+                                    <div class="gallery ocs">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="300px" height="300px">
+                                        </a>
+                                    </div>
+                                    <div class="gallery deltarune">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="200px" height="300px">
+                                        </a>
+                                    </div>
+                                    <div class="gallery deltarune">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="400px" height="300px">
+                                        </a>
+                                    </div>
+                                    <div class="gallery deltarune">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="200px" height="300px">
+                                        </a>
+                                    </div>
+                                    <div class="gallery deltarune">
+                                        <a href="../wip/test_photo.png" data-lightbox="current" data-caption="wip">
+                                            <img class="character_fullimg" src="../wip/test_photo.png" width="250px" height="300px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 22px;"></td>
+                    </tr>
+
+                </table>
+                
+            </div>
+        </main>
+
+        <footer>
+            <!-- <script>
+                function reload_lightbox()
+                {
+                    var head= document.getElementsByTagName('head')[0];
+                    var script= document.createElement('script');
+                    script.src= '../js/lightbox3.min.js';
+                    head.appendChild(script);
+                }
+            </script> -->
+        </footer>
+    </div>
+</body>
+</html>

@@ -224,6 +224,17 @@ h2 {
     margin-right: auto;
     margin-bottom: 25px;
 }
+.h2_rounded_section a {
+    /* text-underline-offset: 8px;
+    text-decoration: solid underline var(--theme-dark) 4px; */
+    text-decoration: none;
+}
+.h2_rounded_section a:hover {
+    /* text-decoration: dashed underline var(--theme-dark) 4px; */
+}
+.h2_rounded_section a:visited {
+    color: var(--theme-dark);
+}
 
 h3 {
     margin: 0px
@@ -274,6 +285,24 @@ table {
     margin: 12px 0px 0px 0px;
 }
 
+ul {
+    margin: 0px;
+}
+
+hr {
+    height: 4px;
+
+    color: var(--theme-misc-primary);
+    background-color: var(--theme-misc-primary);
+
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+video {
+    /* border-radius: 20px; */
+}
+
 /* ====PAGE=============================================== */
 
 #layout_home {
@@ -302,6 +331,17 @@ table {
     border: 2px dashed var(--theme-white);
 }
 
+.character_profile_full {
+    padding: 2px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border: 3px solid var(--theme-primary);
+}
+
 .character_profile {
     padding: 2px;
 
@@ -325,6 +365,18 @@ table {
 .character_profile_link {
     color: var(--page-bg);
     text-decoration: none;
+}
+
+.profile_desc {
+    padding: 20px 12px 12px 20px; 
+    width: 100%;
+}
+
+.character_fullimg {
+    border-radius: 12px;
+    margin: 5px;
+
+    display: block;
 }
 
 .character_thumb {
@@ -379,6 +431,38 @@ table {
 }
 .media_thumb_other:hover {
     border: 4px dashed var(--theme-dark);
+}
+
+.gallery {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.btn {
+    font-family: sukacofe;
+    /* font-size: medium; */
+
+    color: var(--theme-dark);
+    background-color: var(--theme-light);
+
+    border: none;
+    outline: none;
+    border-radius: 25px;
+
+    margin: 0px 0px 4px 4px;
+    padding: 12px 16px;
+
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ddd;
+}
+.btn.active {
+    background-color: var(--theme-dark);
+    color: var(--theme-white);
 }
 
 /* ====MISC=============================================== */
